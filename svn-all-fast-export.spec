@@ -6,6 +6,7 @@ License:	GPL v3
 Group:		Development/Tools
 Source0:	https://github.com/svn-all-fast-export/svn2git/archive/%{version}.tar.gz
 # Source0-md5:	c94acdfb6eeb210fb8654436d179d946
+Patch0:		git.patch
 URL:		https://github.com/svn-all-fast-export/svn2git
 BuildRequires:	apr-devel
 BuildRequires:	qt4-qmake >= 4.3.3-3
@@ -31,6 +32,7 @@ use git filter-branch to amend the commiters' names.
 %prep
 %setup -qc
 mv svn2git-*/* .
+%patch0 -p1
 
 %build
 cd src
