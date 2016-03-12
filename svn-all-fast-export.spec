@@ -8,7 +8,9 @@ Source0:	https://github.com/svn-all-fast-export/svn2git/archive/%{version}.tar.g
 # Source0-md5:	c94acdfb6eeb210fb8654436d179d946
 Patch0:		git.patch
 URL:		https://github.com/svn-all-fast-export/svn2git
+BuildRequires:	QtCore-devel
 BuildRequires:	apr-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	qt4-qmake >= 4.3.3-3
 BuildRequires:	rpmbuild(macros) >= 1.484
 BuildRequires:	subversion-devel
